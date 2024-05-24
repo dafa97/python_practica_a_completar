@@ -49,7 +49,6 @@ class Aeropuerto:
         while slot == -1:
             fecha_vuelo = vuelo["fecha_llegada"]
             slot = self.encuentra_slot(vuelo['fecha_llegada'])
-            print(slot)
 
             fecha_vuelo = fecha_vuelo + datetime.timedelta(minutes=10)
             
