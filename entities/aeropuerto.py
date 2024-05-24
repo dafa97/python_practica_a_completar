@@ -69,10 +69,3 @@ class Aeropuerto:
             df_i = self.df_vuelos.iloc[0: self.n_slots, :]
             df_i = df_i.apply(lambda vuelo: self.asigna_slot(vuelo),axis=1 )
             self.df_vuelos = self.df_vuelos.iloc[self.n_slots:, :]
-
-
-
-
-
-
-
